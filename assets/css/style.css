@@ -17,6 +17,10 @@ body {
     color: var(--body);
 }
 
+p*> {
+    font-size: 14px;
+}
+
 h1,
 h2,
 h3,
@@ -31,11 +35,17 @@ h6 {
 a {
     color: var(--dark) !important;
     text-decoration: none;
-    transition: all 0.5s linear;
+    transition: all 0.4s linear;
 }
 
 a:hover {
     color: var(--brand) !important;
+}
+
+a {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 img {
@@ -44,6 +54,17 @@ img {
 
 section {
     padding: 100px 0;
+}
+
+.custom-card {
+    transition: all 0.4s ease;
+    background: #fff;
+}
+
+.custom-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-5px);
+    border-radius: var(--border-radius);
 }
 
 /* Hero */
@@ -114,7 +135,6 @@ section {
 .btn {
     background-color: var(--brand);
 }
-
 /* navbar */
 .navbar.bg-white {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -127,9 +147,32 @@ section {
 }
 
 /* services */
+.service {
+    padding: 44px 24px;
+    text-align: center;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: var(--brand);
+    color: #fff;
+    border-radius: var(--border-radius);
+    font-size: 34px;
+}
 
 /* cta */
-
+#cta{
+    padding:40px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#cta h2
+#cta p{
+    color: #fff;
+}
 /* portfolio */
 
 /* reviews */
