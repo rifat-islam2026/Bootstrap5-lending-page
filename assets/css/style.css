@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --brand: #e22020;
+    --body: #606060;
+    --dark: #19282F;
+    --border-radius: 4px;
+    --shadow: 0px 4px 60px rgba(0, 0, 0, 0.14);
+}
+
+/* reset & helpers */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: var(--dark);
+    font-family: "Domine", sans-serif;
+}
+
+a {
+    color: var(--dark) !important;
+    text-decoration: none;
+    transition: all 0.5s linear;
+}
+
+a:hover {
+    color: var(--brand) !important;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* Hero */
+#hero {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/cover.jpg);
+    background-size: cover;
+    /*background-position: center;*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+#hero h1,
+#hero p {
+    color: #fff;
+}
+
+#hero p {
+    max-width: 500px;
+    margin: 12px auto 28px auto;
+}
+
+#hero .input-group {
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: var(--border-radius);
+}
+
+#hero .input-group input {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+#hero .input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-family: "Fira sans";
+
+}
+
+#hero .input-group input:focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+/*  BTN  */
+.btn-brand {
+    padding: 12px 28px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    border-radius: var(--border-radius);
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-brand:hover {
+    color: #fff;
+}
+
+.btn {
+    background-color: var(--brand);
+}
+
+/* navbar */
+.navbar.bg-white {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.navbar .navbar-nav .nav-link {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* services */
+
+/* cta */
+
+/* portfolio */
+
+/* reviews */
+
+/* team */
+
+/* milestone */
+
+/* blog */
+
+/* contact */
+
+/* Footer */
